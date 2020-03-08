@@ -28,6 +28,7 @@
 int main()
 {
 	system("clear");
+	system("setterm --background yellow");
 	emp_first = emp_end = NULL;    //链表指针初始化
 	gsave = gfirst = 0;            //判断标识赋值为0,表示数据为空
 
