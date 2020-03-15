@@ -1,0 +1,524 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_DIG_LOGIN DIALOG DISCARDABLE  50, 50, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统登录"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,70,20,90,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,70,35,90,11,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "用户名",IDC_STATIC,20,20,40,10
+    LTEXT           "密码",IDC_STATIC,20,35,40,10
+    PUSHBUTTON      "登录",IDC_BTN_LOGIN,25,60,55,15
+    PUSHBUTTON      "取消",IDC_BTN_CANCEL,95,60,55,15
+END
+
+ID_DLG_CLIENT DIALOG DISCARDABLE  0, 0, 291, 176
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "欢迎登录图书管理系统"
+MENU ID_CLIENT_MENU
+FONT 10, "System"
+BEGIN
+END
+
+ID_DLG_OPERATOR_M DIALOG DISCARDABLE  0, 0, 375, 255
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "操作员信息"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "操作员信息管理",IDC_STATIC,17,29,331,189
+    LTEXT           "操作员名称",IDC_STATIC,30,43,52,14
+    LTEXT           "操作员密码",IDC_STATIC,130,43,52,14
+    LTEXT           "操作员级别",IDC_STATIC,230,43,52,14
+    EDITTEXT        IDC_EDIT_PWD,172,43,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NAME,72,43,58,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_LEVEL,273,43,51,68,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List4",IDC_LIST_VIEW,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_TABSTOP,35,70,298,134
+    PUSHBUTTON      "增添",IDC_BUTTON_ADD,30,225,64,14
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,109,225,64,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,188,225,64,14
+    PUSHBUTTON      "退出",ID_QUIT,267,225,64,14
+END
+
+ID_DLG_BOOK_INFO DIALOG DISCARDABLE  0, 0, 338, 217
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书信息"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "书籍名称",IDC_STATIC,19,14,38,9
+    EDITTEXT        IDC_EDIT_BOOKNAME,62,14,83,14,ES_AUTOHSCROLL
+    LTEXT           "出版社",IDC_STATIC,156,14,38,9
+    EDITTEXT        IDC_EDIT_PUBLIC,199,14,83,14,ES_AUTOHSCROLL
+    LTEXT           "助记码",IDC_STATIC,19,31,38,9
+    EDITTEXT        IDC_EDIT_MNCODE,62,31,83,14,ES_AUTOHSCROLL
+    LTEXT           "价格",IDC_STATIC,156,31,38,9
+    EDITTEXT        IDC_EDIT_PRICE,199,31,83,14,ES_AUTOHSCROLL
+    LTEXT           "条形码",IDC_STATIC,19,47,38,9
+    EDITTEXT        IDC_EDIT_BARCODE,62,47,83,14,ES_AUTOHSCROLL
+    LTEXT           "备注",IDC_STATIC,156,47,38,9
+    EDITTEXT        IDC_EDIT_MEMO,199,47,83,14,ES_AUTOHSCROLL
+    LTEXT           "作者",IDC_STATIC,19,64,38,9
+    EDITTEXT        IDC_EDIT_AUTHOR,62,64,83,14,ES_AUTOHSCROLL
+    LTEXT           "种类",IDC_STATIC,156,64,38,9
+    CONTROL         "List1",IDC_LIST_VIEW,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,13,94,311,87
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,13,7,291,82
+    COMBOBOX        IDC_COMBO_KINDS,199,64,85,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增添",IDC_BUTTON_ADD,19,191,51,19
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,96,191,51,19
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,173,191,51,19
+    PUSHBUTTON      "退出",ID_QUIT,250,191,51,19
+END
+
+ID_DLG_PROVIDER_INFO DIALOG DISCARDABLE  0, 0, 385, 272
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "供应商信息"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_PROVIDER,96,16,88,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROVIDER_CEO,96,31,88,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MANAGER,96,46,88,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROVIDER_PHONE,96,60,88,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROVIDER_ADDRESS,249,17,88,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROVIDER_NETADDRESS,249,33,88,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROVIDER_EMAIL,249,49,88,14,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST_VIEW,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,12,84,359,132
+    LTEXT           "供应商名称",IDC_STATIC,47,18,41,8
+    LTEXT           "法人",IDC_STATIC,71,32,17,8
+    LTEXT           "负责人",IDC_STATIC,63,47,25,8
+    LTEXT           "联系电话",IDC_STATIC,55,62,33,8
+    LTEXT           "详细地址",IDC_STATIC,210,20,33,8
+    LTEXT           "网址",IDC_STATIC,226,36,17,8
+    LTEXT           "邮箱",IDC_STATIC,226,53,17,8
+    GROUPBOX        "供应商信息",IDC_STATIC,12,3,359,75
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,57,232,60,16
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,127,231,60,16
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,197,231,60,16
+    PUSHBUTTON      "退出",ID_QUIT,267,231,60,16
+END
+
+ID_DLG_BOOK_KINDS DIALOG DISCARDABLE  0, 0, 291, 208
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书种类信息"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_BOOK_KINDS,139,21,69,14,ES_AUTOHSCROLL
+    LTEXT           "图书种类名称",IDC_STATIC,83,24,49,8
+    GROUPBOX        "图书种类",IDC_STATIC,46,9,199,34
+    CONTROL         "List1",IDC_LIST_VIEW,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,48,50,198,109
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,10,172,60,16
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,80,171,60,16
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,150,171,60,16
+    PUSHBUTTON      "退出",ID_QUIT,220,171,60,16
+END
+
+ID_DLG_STORE_INFO DIALOG DISCARDABLE  0, 0, 219, 199
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "仓库信息"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "仓库名称",IDC_STATIC,25,17,33,8
+    EDITTEXT        IDC_EDIT_STORE,65,15,77,14,ES_AUTOHSCROLL
+    GROUPBOX        "仓库信息",IDC_STATIC,7,7,199,34
+    CONTROL         "List1",IDC_LIST_VIEW,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,43,198,109
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,15,167,38,16
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,65,167,38,16
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,115,167,38,16
+    PUSHBUTTON      "退出",ID_QUIT,165,167,38,16
+END
+
+ID_DLG_DESK_INFO DIALOG DISCARDABLE  0, 0, 291, 208
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "柜台信息"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "柜台名称",IDC_STATIC,64,22,33,8
+    EDITTEXT        IDC_EDIT_DESK,104,20,77,14,ES_AUTOHSCROLL
+    GROUPBOX        "柜台信息",IDC_STATIC,46,7,199,34
+    CONTROL         "List1",IDC_LIST_VIEW,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,46,43,198,109
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,10,172,60,16
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,80,171,60,16
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,150,171,60,16
+    PUSHBUTTON      "退出",ID_QUIT,220,171,60,16
+END
+
+ID_DLG_BOOK_INPUT DIALOGEX 0, 0, 387, 287
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书入库"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_INPUT_PROVIDER,64,26,71,14,ES_AUTOHSCROLL
+    LTEXT           "供应商：",IDC_STATIC,26,30,33,8
+    LTEXT           "操作员：",IDC_STATIC,25,9,33,8
+    EDITTEXT        IDC_INPUT_OPERATOR,64,5,70,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "时间：",IDC_STATIC,275,7,25,8
+    CONTROL         "DateTimePicker1",IDC_DATETIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP,
+                    304,6,69,13
+    LTEXT           "总计：",IDC_STATIC,67,222,25,13
+    EDITTEXT        IDC_SUMMONEY,103,203,38,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_DISABLED
+    LTEXT           "折扣：",IDC_STATIC,155,222,25,13
+    EDITTEXT        IDC_INPUT_REBATE,195,203,38,14,ES_AUTOHSCROLL
+    LTEXT           "实付金额：",IDC_STATIC,255,222,41,11
+    EDITTEXT        IDC_FACTMONEY,301,203,38,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "List3",IDC_LIST_VIEW,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | WS_BORDER | WS_TABSTOP,24,47,349,147,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "确定",IDC_BUTTON_ADD,92,237,53,18
+    PUSHBUTTON      "退出",ID_QUIT,229,237,53,18
+    COMBOBOX        IDC_COMBO_STORE,190,5,69,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "仓库：",IDC_STATIC,159,9,25,8
+    EDITTEXT        IDC_INPUT_BARCODE,189,24,69,14,ES_AUTOHSCROLL
+    LTEXT           "条形码：",IDC_STATIC,151,27,33,8
+    EDITTEXT        IDC_INPUT_COUNT,304,25,69,14,ES_AUTOHSCROLL
+    LTEXT           "数量：",IDC_STATIC,275,27,25,8
+    PUSHBUTTON      "显示辅助视图",IDC_BUTTON_SUB,322,265,65,21,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+END
+
+ID_DLG_BOOK_ADJUST DIALOG DISCARDABLE  0, 0, 427, 223
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书调拨"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "提书仓库",IDC_STATIC,12,10,33,8
+    COMBOBOX        IDC_TAKELIST,50,7,64,57,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "存放仓库",IDC_STATIC,119,10,33,8
+    COMBOBOX        IDC_STORELIST,157,7,64,57,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "操作员",IDC_STATIC,228,10,25,8
+    EDITTEXT        IDC_ADJUST_OPERATOR,259,7,53,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "时间",IDC_STATIC,321,10,17,8
+    CONTROL         "DateTimePicker1",IDC_DATETIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,344,7,58,13
+    CONTROL         "List2",IDC_LIST_VIEW,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,11,45,388,133
+    PUSHBUTTON      "确定",IDC_BUTTON_ADD,78,185,53,18
+    PUSHBUTTON      "退出",ID_QUIT,251,185,53,18
+    EDITTEXT        IDC_ADJUST_PROVIDER,55,24,71,14,ES_AUTOHSCROLL
+    LTEXT           "供应商",IDC_STATIC,20,27,25,8
+    EDITTEXT        IDC_ADJUST_BARCODE,171,24,81,14,ES_AUTOHSCROLL
+    LTEXT           "条形码",IDC_STATIC,136,25,25,8
+    EDITTEXT        IDC_ADJUST_COUNT,289,25,79,14,ES_AUTOHSCROLL
+    LTEXT           "数量",IDC_STATIC,262,25,17,8
+END
+
+ID_DLG_BOOK_SALE DIALOGEX 0, 0, 367, 278
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书销售"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SALE_CUSTOMER,44,5,50,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_DESK,136,5,50,61,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DISEDIT_OPERATOR,221,4,50,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CONTROL         "DateTimePicker1",IDC_DATETIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP,
+                    298,4,57,14
+    EDITTEXT        IDC_SALE_BARCODE,64,38,61,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SALE_COUNT,231,38,61,14,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST_VIEW,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,10,64,344,121
+    EDITTEXT        IDC_SUMMONEY,83,195,44,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SALE_REBATE,170,195,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FACTMONEY,273,195,44,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "总计：",IDC_STATIC,49,202,25,8
+    LTEXT           "折扣：",IDC_STATIC,136,199,25,8
+    LTEXT           "实付金额：",IDC_STATIC,223,201,41,8
+    LTEXT           "顾客姓名",IDC_STATIC,5,7,33,8
+    LTEXT           "操作员",IDC_STATIC,192,7,25,8
+    LTEXT           "时间",IDC_STATIC,278,7,17,8
+    GROUPBOX        "销售信息",IDC_STATIC,0,24,346,61
+    LTEXT           "柜台名称",IDC_STATIC,100,7,33,8
+    LTEXT           "条形码",IDC_STATIC,31,42,25,8
+    LTEXT           "数量",IDC_STATIC,205,42,17,8
+    PUSHBUTTON      "确定",IDC_BUTTON_ADD,92,229,53,18
+    PUSHBUTTON      "退出",ID_QUIT,210,228,53,18
+    PUSHBUTTON      "显示辅助视图",IDC_BUTTON_SUB,299,256,65,21,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+END
+
+ID_DLG_QUERY DIALOG DISCARDABLE  0, 0, 430, 219
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_VIEW,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,33,408,144
+    LTEXT           "查询条件：",IDC_STATIC,30,14,41,8
+    COMBOBOX        IDC_CONDITIONLIST,71,11,77,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "时间：",IDC_STATIC,258,14,25,8
+    CONTROL         "DateTimePicker1",IDC_STARTTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,284,11,58,13
+    LTEXT           "到",IDC_STATIC,347,14,9,8
+    CONTROL         "DateTimePicker1",IDC_ENDTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,359,11,58,13
+    CONTROL         "",IDC_SELECT_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,14,10,8
+    EDITTEXT        IDC_SQ_VALUE,158,11,77,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_QUERY,105,185,48,18
+    PUSHBUTTON      "清空记录",IDC_CLEAR,172,185,48,18
+    PUSHBUTTON      "退出",ID_QUIT,239,185,48,18
+END
+
+ID_DLG_CONFIG DIALOG DISCARDABLE  0, 0, 114, 115
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "配置"
+FONT 10, "System"
+BEGIN
+    LTEXT           "IP",IDC_STATIC,15,13,25,8
+    LTEXT           "登录名",IDC_STATIC,15,34,25,8
+    LTEXT           "密码",IDC_STATIC,15,55,25,8
+    LTEXT           "数据库",IDC_STATIC,15,76,25,8
+    EDITTEXT        IDC_EDIT_IP,47,13,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER,46,33,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PWD,46,55,48,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DBASE,45,74,49,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTON_CONFIG,15,93,33,15
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,61,93,33,15
+END
+
+ID_DLG_STOCKQUERY DIALOG DISCARDABLE  0, 0, 430, 219
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_VIEW,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,33,408,144
+    LTEXT           "存放地点",IDC_STATIC,30,14,33,8
+    COMBOBOX        IDC_STORELIST,71,11,77,65,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_STORE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,14,10,8
+    EDITTEXT        IDC_BOOK_PROPERTY,305,11,77,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_QUERY,105,185,48,18
+    PUSHBUTTON      "清空记录",IDC_CLEAR,172,185,48,18
+    PUSHBUTTON      "退出",ID_QUIT,239,185,48,18
+    COMBOBOX        IDC_BOOK_CONDITIONLIST,220,11,77,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "图书查询",IDC_STATIC,180,14,33,8
+    CONTROL         "",IDC_BOOK_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    165,14,10,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    ID_DIG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    ID_DLG_CLIENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        VERTGUIDE, 53
+        VERTGUIDE, 100
+        VERTGUIDE, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+        HORZGUIDE, 91
+    END
+
+    ID_DLG_OPERATOR_M, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        VERTGUIDE, 30
+        VERTGUIDE, 35
+        VERTGUIDE, 130
+        VERTGUIDE, 230
+        VERTGUIDE, 324
+        VERTGUIDE, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    ID_DLG_BOOK_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 331
+        VERTGUIDE, 19
+        VERTGUIDE, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    ID_DLG_BOOK_INPUT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 286
+    END
+
+    ID_DLG_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 107
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+ID_CLIENT_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "【系统】", CHECKED
+    BEGIN
+        MENUITEM "退出",                        ID_EXIT
+    END
+    POPUP "【基本信息管理】"
+    BEGIN
+        MENUITEM "操作员管理",                  ID_OPERATOR_M
+        MENUITEM "图书信息管理",                ID_BOOK_INFO
+        MENUITEM "供应商信息管理",              ID_PROVIDER_INFO
+        MENUITEM "图书种类信息管理",            ID_BOOK_KIND
+        MENUITEM "仓库信息管理",                ID_CK_INFO
+        MENUITEM "柜台信息管理",                ID_DESK_INFO
+    END
+    POPUP "【库存管理】"
+    BEGIN
+        MENUITEM "图书入库管理",                ID_BOOK_INPUT
+        MENUITEM "入库退货管理",                ID_INPUT_BACK
+        MENUITEM "图书调拨管理",                ID_BOOK_ADJUST
+        MENUITEM "图书销售管理",                ID_SALE_M
+        MENUITEM "销售退货管理",                ID_SALE_BACK
+    END
+    POPUP "【查询管理】"
+    BEGIN
+        MENUITEM "入库查询",                    ID_INPUT_QUERY
+        MENUITEM "入库退货查询",                ID_INPUT_BACK_QUERY
+        MENUITEM "销售查询",                    ID_SALE_QUERY
+        MENUITEM "销售退货查询",                ID_SALE_BACK_QUERY
+        MENUITEM "库存查询",                    ID_STOCK_QUERY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_1
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP  DISCARDABLE     "toolbar2.bmp"
+IDB_BITMAP_CLIENT       BITMAP  DISCARDABLE     "res\\图片2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "res\\BaseInfo.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\ADD.ICO"
+IDI_ICON3               ICON    DISCARDABLE     "res\\QUERY.ICO"
+IDI_ICON4               ICON    DISCARDABLE     "res\\InputStore.ico"
+IDI_ICON5               ICON    DISCARDABLE     "res\\Shut Down.ico"
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
